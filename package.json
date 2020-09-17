@@ -1,0 +1,17 @@
+{
+  "name": "neurolab",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "echo \"no task code\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lunivm/neurolab.git"
+  },
+  "author": "Mykola Luniv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lunivm/neurolab/issues"
+  },
+  "homepage": "https://github.com/lunivm/neurolab#readme"
+}

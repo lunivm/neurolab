@@ -1,7 +1,7 @@
-import { NetworkBuilder } from './network.builder.ts';
+import { NetworkBuilder } from './network.builder';
 
 export class NetworkDirector {
-  public constructNetwork(builder: NetworkBuilder): void {
+  constructNetwork(builder: NetworkBuilder): void {
     builder.reset();
 
     builder.buildLayers();

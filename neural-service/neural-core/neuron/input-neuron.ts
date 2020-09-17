@@ -1,8 +1,8 @@
-import { Neuron } from './neuron.ts';
+import { Neuron } from './neuron';
 
 export class InputNeuron extends Neuron {
   constructor() {
     super();
-    this.output = [];
+    this.setOutputs([]);
   }
 }

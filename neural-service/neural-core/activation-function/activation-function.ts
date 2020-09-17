@@ -1,4 +1,4 @@
-import { ActivationFunctionType } from './activation-function-type.ts';
+import { ActivationFunctionType } from './activation-function-type';
 
 export type ActivationFunction = (x: number) => number;
 

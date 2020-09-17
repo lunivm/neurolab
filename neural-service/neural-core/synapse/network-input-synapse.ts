@@ -1,8 +1,8 @@
-import { Synapse } from './synapse.ts';
-import { Neuron } from '../neuron/neuron.ts';
+import { Synapse } from './synapse';
+import { Neuron } from '../neuron/neuron';
 
 export class NetworkInputSynapse extends Synapse {
-  public readonly weight: number = 1;
+  readonly weight: number = 1;
 
   constructor(outputNeuron: Neuron) {
     super(null, outputNeuron);

@@ -1,4 +1,4 @@
-import { Network } from '../network.ts';
+import { Network } from '../network';
 
 export class FeedforwardNetwork extends Network {
 

@@ -1,18 +1,18 @@
-import { Neuron } from '../neuron/neuron.ts';
+import { Neuron } from '../neuron/neuron';
 
 export class Synapse {
-  public weight: number = NaN;
+ private _weight = NaN;
 
   constructor(
     private readonly inputNeuron: Neuron | null,
     private readonly  outputNeuron: Neuron | null
   ) {}
 
-  public get input(): Neuron | null {
+  get input(): Neuron | null {
     return this.inputNeuron;
   }
 
-  public get output(): Neuron | null {
+  get output(): Neuron | null {
     return this.outputNeuron;
   }
 }
