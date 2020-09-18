@@ -1,6 +1,9 @@
 import { Layer } from '../layer/layer';
+import { NetworkType } from './network.type';
 
 export abstract class Network {
+  public abstract readonly type: NetworkType;
+
   public get layers(): Layer[] {
     return this._layers.slice();
   }

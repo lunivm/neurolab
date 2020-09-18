@@ -2,8 +2,8 @@ import { Layer } from './layer';
 import { LayerType } from './layer.type';
 
 export class HiddenLayer extends Layer {
-  readonly type = LayerType.Hidden;
-  readonly id: string = '';
+  public readonly type = LayerType.Hidden;
+  public readonly id: string = '';
 
   constructor(id: string) {
     super();

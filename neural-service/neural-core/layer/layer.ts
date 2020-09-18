@@ -2,7 +2,7 @@ import { Neuron } from '../neuron/neuron';
 import { LayerType } from './layer.type';
 
 export abstract class Layer {
-  abstract readonly type: LayerType;
+  public abstract readonly type: LayerType;
 
   protected _neurons: Neuron[] = [];
 

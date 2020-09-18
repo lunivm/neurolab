@@ -1,20 +1,27 @@
 import { Synapse } from '../synapse/synapse';
+import { NeuronType } from './neuron.type';
 
 export abstract class Neuron {
-  get inputs(): Synapse[] {
+  public readonly abstract type: NeuronType;
+
+  public get inputs(): Synapse[] {
     return this._inputs.slice();
   }
 
-  get outputs(): Synapse[] {
+  public get outputs(): Synapse[] {
     return this._outputs.slice();
   }
 
-  addInputSynapse(...synapse: Synapse[]) {
+  public addInputSynapse(...synapse: Synapse[]) {
     this._inputs.push(...synapse);
   }
 
-  addOutputSynapse(...synapse: Synapse[]) {
+  public addOutputSynapse(...synapse: Synapse[]) {
     this._outputs.push(...synapse);
+  }
+
+  public toString(): string {
+    return this.type;
   }
 
   protected setOutputs(val: Synapse[]) {
